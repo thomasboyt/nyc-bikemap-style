@@ -1,0 +1,1 @@
+~/bin/maputnik --file style.json --watch
