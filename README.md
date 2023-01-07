@@ -2,10 +2,13 @@ This style intends to emulate the look of NYC DOT bike map (https://www.nyc.gov/
 
 This style is to be used in conjunction with my fork of openmaptiles that adds cycling information from the OSM data set: https://github.com/thomasboyt/openmaptiles
 
-Todos:
+Style todos:
 
 - [ ] Better display of street names - move off of lines
 - [ ] One way arrows
 - [ ] Tweak zoom levels
-  - [ ] Display cycleways (e.g. bridge lanes) below 11 (requires openmaptiles change)
 - [ ] Better handling of adjacent bike paths of different types, e.g. Brooklyn Navy Yard's on-road lane and off-road lane
+
+Openmaptiles todos:
+
+- [ ] Change zoom level needed to display cycleways (e.g. bridge lanes)
