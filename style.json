@@ -1461,6 +1461,10 @@
           [
             "has",
             "cycleway_right"
+          ],
+          [
+            "has",
+            "cycleway_both"
           ]
         ]
       ],
@@ -1494,6 +1498,14 @@
               [
                 "get",
                 "cycleway_right"
+              ],
+              "lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_both"
               ],
               "lane"
             ]
@@ -1540,6 +1552,14 @@
                 "cycleway_right"
               ],
               "track"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_both"
+              ],
+              "track"
             ]
           ],
           "#008553",
@@ -1566,6 +1586,14 @@
               [
                 "get",
                 "cycleway_right"
+              ],
+              "shared_lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_both"
               ],
               "shared_lane"
             ]
