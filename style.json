@@ -1451,20 +1451,72 @@
             "cycleway"
           ],
           [
-            "has",
-            "cycleway"
+            "all",
+            [
+              "has",
+              "cycleway"
+            ],
+            [
+              "!=",
+              "cycleway",
+              "no"
+            ],
+            [
+              "!=",
+              "cycleway",
+              "separate"
+            ]
           ],
           [
-            "has",
-            "cycleway_left"
+            "all",
+            [
+              "has",
+              "cycleway_left"
+            ],
+            [
+              "!=",
+              "cycleway_left",
+              "no"
+            ],
+            [
+              "!=",
+              "cycleway_left",
+              "separate"
+            ]
           ],
           [
-            "has",
-            "cycleway_right"
+            "all",
+            [
+              "has",
+              "cycleway_right"
+            ],
+            [
+              "!=",
+              "cycleway_right",
+              "no"
+            ],
+            [
+              "!=",
+              "cycleway_right",
+              "separate"
+            ]
           ],
           [
-            "has",
-            "cycleway_both"
+            "all",
+            [
+              "has",
+              "cycleway_both"
+            ],
+            [
+              "!=",
+              "cycleway_both",
+              "no"
+            ],
+            [
+              "!=",
+              "cycleway_both",
+              "separate"
+            ]
           ]
         ]
       ],
