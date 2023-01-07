@@ -1433,6 +1433,19 @@
         [
           "any",
           [
+            "all",
+            [
+              "==",
+              "subclass",
+              "path"
+            ],
+            [
+              "==",
+              "bicycle",
+              "designated"
+            ]
+          ],
+          [
             "==",
             "subclass",
             "cycleway"
@@ -1488,6 +1501,14 @@
           "#41ACD7",
           [
             "any",
+            [
+              "==",
+              [
+                "get",
+                "subclass"
+              ],
+              "path"
+            ],
             [
               "==",
               [
