@@ -1413,6 +1413,149 @@
       }
     },
     {
+      "id": "cycle_lanes",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "!=",
+          "bicycle",
+          "use_sidepath"
+        ],
+        [
+          "any",
+          [
+            "==",
+            "subclass",
+            "cycleway"
+          ],
+          [
+            "has",
+            "cycleway"
+          ],
+          [
+            "has",
+            "cycleway_left"
+          ],
+          [
+            "has",
+            "cycleway_right"
+          ]
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "any",
+            [
+              "==",
+              [
+                "get",
+                "cycleway"
+              ],
+              "lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_left"
+              ],
+              "lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_right"
+              ],
+              "lane"
+            ]
+          ],
+          "#41ACD7",
+          [
+            "any",
+            [
+              "==",
+              [
+                "get",
+                "subclass"
+              ],
+              "cycleway"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway"
+              ],
+              "track"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_left"
+              ],
+              "track"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_right"
+              ],
+              "track"
+            ]
+          ],
+          "#008553",
+          [
+            "any",
+            [
+              "==",
+              [
+                "get",
+                "cycleway"
+              ],
+              "shared_lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_left"
+              ],
+              "shared_lane"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "cycleway_right"
+              ],
+              "shared_lane"
+            ]
+          ],
+          "#9B5C90",
+          "red"
+        ],
+        "line-width": 8
+      }
+    },
+    {
       "id": "admin_sub",
       "type": "line",
       "source": "openmaptiles",
