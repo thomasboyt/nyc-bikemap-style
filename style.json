@@ -1657,6 +1657,34 @@
       }
     },
     {
+      "id": "bicycle_dismount_path",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 11,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "LineString"
+        ],
+        [
+          "==",
+          "bicycle",
+          "dismount"
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#A6C766",
+        "line-width": 8
+      }
+    },
+    {
       "id": "admin_sub",
       "type": "line",
       "source": "openmaptiles",
