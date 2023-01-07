@@ -1,0 +1,28 @@
+https://www1.nyc.gov/html/dot/downloads/pdf/nyc-bike-map-2022.pdf
+
+Green - PBL
+  "access point" - green dot (maybe not possible)
+Blue - conventional lane
+Purple - sharrows
+Red - signed
+Light green - walk bike
+Black dashes - lights timed for pedestrians
+
+Stuff that shows up on the map
+
+Neighborhood names
+Airports
+
+---
+
+map layers use different road types to make different sized lines
+might need to make a corresponding bike lane thing for each road type
+
+single layer for roads
+
+---
+
+how to add layer: https://github.com/openmaptiles/openmaptiles-skiing
+might be better than reusing transport layer
+
+https://wiki.openstreetmap.org/wiki/Bicycle
