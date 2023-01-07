@@ -1,11 +1,11 @@
 https://www1.nyc.gov/html/dot/downloads/pdf/nyc-bike-map-2022.pdf
 
-Green - PBL
+Green - PBL - #008553
   "access point" - green dot (maybe not possible)
-Blue - conventional lane
-Purple - sharrows
-Red - signed
-Light green - walk bike
+Blue - conventional lane - #41ACD7
+Purple - sharrows - #9B5C90
+Red - signed - #C98D7D
+Light green - walk bike - #A6C766
 Black dashes - lights timed for pedestrians
 
 Stuff that shows up on the map
@@ -26,3 +26,15 @@ how to add layer: https://github.com/openmaptiles/openmaptiles-skiing
 might be better than reusing transport layer
 
 https://wiki.openstreetmap.org/wiki/Bicycle
+
+
+to make a NYC metro map: get north america map and create bounding box
+https://github.com/openmaptiles/openmaptiles/issues/485#issuecomment-409605790
+
+bounding box
+$$dW0741634$$eW0733857$$fN0405503$$gN0402930
+$$c(W 74°16'34"--W 73°38'57"/N 40°55'03"--N 40°29'30")
+[[[-74.2761117786,40.491792266],[-73.6494176617,40.491792266],[-73.6494176617,40.9176402163],[-74.2761117786,40.9176402163],[-74.2761117786,40.491792266]]]
+-74.276112,40.491792,-73.649418,40.91764
+
+osmium extract -b -74.276112,40.491792,-73.649418,40.91764 us-latest.osm.pbf new-york-metro.pbf
