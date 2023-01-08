@@ -1473,7 +1473,7 @@
       }
     },
     {
-      "id": "cycle_one_way_arrows_forward",
+      "id": "cycle_one_way_arrows",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation",
@@ -1491,15 +1491,32 @@
           true
         ],
         [
-          "==",
-          "cycleway_oneway",
-          1
+          "any",
+          [
+            "==",
+            "cycleway_oneway",
+            1
+          ],
+          [
+            "==",
+            "cycleway_oneway",
+            -1
+          ]
         ]
       ],
       "layout": {
         "icon-image": "oneway",
         "icon-size": 0.5,
-        "icon-rotate": 90,
+        "icon-rotate": [
+          "match",
+          [
+            "get",
+            "cycleway_oneway"
+          ],
+          1,
+          90,
+          -90
+        ],
         "icon-rotation-alignment": "map",
         "symbol-placement": "line",
         "symbol-spacing": 75,
