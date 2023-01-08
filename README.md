@@ -5,10 +5,27 @@ This style is to be used in conjunction with my fork of openmaptiles that adds c
 Style todos:
 
 - [ ] Better display of street names - move off of lines
-- [ ] One way arrows
+- [ ] Tweak spacing of one way arrows
+  - [ ] Potentially hide one-way arrows for short segments?
 - [ ] Tweak zoom levels
 - [ ] Better handling of adjacent bike paths of different types, e.g. Brooklyn Navy Yard's on-road lane and off-road lane
 
-Openmaptiles todos:
+Rebuild openmaptiles:
 
-- [ ] Change zoom level needed to display cycleways (e.g. bridge lanes)
+```sh
+# sometimes you might need to drop the db if things get weird
+make destroy-db && make start-db-preloaded
+
+# if only sql (no yaml!) changed
+make clean && make all && make import-sql && make test-perf-null
+
+# if yaml changed or pbf changed
+make destroy-db && make start-db-preloaded && make clean && make all && make import-osm && make import-sql && make test-perf-null
+```
+
+To self-host sprites:
+
+```sh
+cd sprites
+python -m http.server 4000
+```

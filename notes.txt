@@ -38,3 +38,10 @@ $$c(W 74°16'34"--W 73°38'57"/N 40°55'03"--N 40°29'30")
 -74.276112,40.491792,-73.649418,40.91764
 
 osmium extract -b -74.276112,40.491792,-73.649418,40.91764 us-latest.osm.pbf new-york-metro.pbf
+
+---
+
+weird streets
+
+crescent st astoria - two-way track with one-way traffic
+38 av astoria - two-way street with one-way sharrows
