@@ -1435,9 +1435,17 @@
           [
             "all",
             [
-              "==",
-              "subclass",
-              "path"
+              "any",
+              [
+                "==",
+                "subclass",
+                "path"
+              ],
+              [
+                "==",
+                "subclass",
+                "footway"
+              ]
             ],
             [
               "==",
@@ -1572,6 +1580,14 @@
                 "subclass"
               ],
               "path"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "subclass"
+              ],
+              "footway"
             ],
             [
               "==",
