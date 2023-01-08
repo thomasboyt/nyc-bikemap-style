@@ -1445,6 +1445,11 @@
                 "==",
                 "subclass",
                 "footway"
+              ],
+              [
+                "==",
+                "class",
+                "service"
               ]
             ],
             [
@@ -1588,6 +1593,14 @@
                 "subclass"
               ],
               "footway"
+            ],
+            [
+              "==",
+              [
+                "get",
+                "class"
+              ],
+              "service"
             ],
             [
               "==",
