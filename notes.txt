@@ -45,3 +45,28 @@ weird streets
 
 crescent st astoria - two-way track with one-way traffic
 38 av astoria - two-way street with one-way sharrows
+
+---
+
+joining adjacent lanes for one way stuff
+
+investigate how labeling works - it looks like e.g. 4th av only one lane is labeled when zoomed out. what controls this?
+
+ST_linemerge? update_transportation_name
+merger notes - https://www.champs-libres.coop/blog/post/2019-09-01-street-labelling-with-mapnik/
+
+4th av:
+https://www.openstreetmap.org/way/1030285236#map=18/40.65902/-73.99915&layers=Y
+
+---
+
+mobile problems!
+
+how do i get mbtiles into an app?
+
+https://gist.github.com/namannik/3b7c8b69c2d0768d0c2b48d2ed5ff71c
+
+try maplibre for mbtiles: https://github.com/maplibre/maplibre-gl-native/issues/17
+https://github.com/roblabs/openmaptiles-ios-demo
+
+also pmtiles looks interesting https://protomaps.com/blog/pmtiles-v3-whats-new
